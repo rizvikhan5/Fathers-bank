@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Bank Account</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-3xl text-center mt-5">let`s chake
+            <span class="font-extrabold text-fuchsia-700">My father Bank Acoount</span>
+        </h1>
+    </header>
+    <main class="mt-12 pt-12 pb-62  bg-teal-200">
+        <section class="mt-6 ">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-cyan-700 p-8 rounded-md">
+                    <h4 class="text-3xl">Deposit</h4>
+                    <h2  class="text-5xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-violet-700	 p-8 rounded-md">
+                    <h4 class="text-3xl">withderow</h4>
+                    <h2 class="text-5xl">$<span id="withdrow-total">00</span></h2>
+                </div>
+                <div class="bg-fuchsia-700	 p-8 rounded-md">
+                    <h4 class="text-3xl">Balance</h4>
+                    <h2 class="text-5xl">$<span id="balance-total">1240</span></h2>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- deposit and withderow -->
+        <section class="mt-16 pb-32">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-green-700	 p-8 rounded-md">
+                    <h4 class="text-3xl">Deposit</h4>
+                    <input class="w-10/12 mt-1 mb-2 block px-2 text-black" type="text" name="" id="deposit-id"
+                        placeholder="$ Amount you want to Deposit" required>
+                    <button id="btn-deposit" class="bg-red-400 w-20 h-10 rounded-md text-white">Deposit</button>
+                </div>
+                <div class="bg-amber-700 p-8 rounded-md">
+                    <h4 class="text-3xl">withderow</h4>
+                    <input class="w-10/12 mt-1 mb-2 block px-2 text-black" type="text" name="" id="withdrow-id"
+                        placeholder="$ Amount you want to Withderow" required>
+                    <button id="btn-withdrow" class="bg-red-400 w-24 h-10 rounded-md text-white">Withderow</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/deposit.js"></script>
+</body>
+
+</html>
